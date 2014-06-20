@@ -133,6 +133,13 @@
 		F4264CA615C37BF400064885 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CA515C37BF400064885 /* AppDelegate.m */; };
 		F4264CA915C37BF400064885 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CA815C37BF400064885 /* HelloWorldLayer.m */; };
 		F4264CAC15C37BF400064885 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CAB15C37BF400064885 /* IntroLayer.m */; };
+		F4264CBF15C37EDD00064885 /* Amoeba.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CB715C37EDD00064885 /* Amoeba.m */; };
+		F4264CC015C37EDD00064885 /* AmoebaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CB915C37EDD00064885 /* AmoebaCell.m */; };
+		F4264CC115C37EDD00064885 /* AmoebaGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CBB15C37EDD00064885 /* AmoebaGrid.m */; };
+		F4264CC215C37EDD00064885 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4264CBE15C37EDD00064885 /* Enemy.m */; };
+		F4264CC515C37EF700064885 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = F4264CC315C37EF700064885 /* bg2.png */; };
+		F4264CC615C37EF700064885 /* microbes-dec-8-2010-80.png in Resources */ = {isa = PBXBuildFile; fileRef = F4264CC415C37EF700064885 /* microbes-dec-8-2010-80.png */; };
+		F49B7C4015F176B4005BF309 /* cell0.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F49B7C3F15F176B4005BF309 /* cell0.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -398,6 +405,18 @@
 		F4264CA815C37BF400064885 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		F4264CAA15C37BF400064885 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		F4264CAB15C37BF400064885 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		F4264CB615C37EDD00064885 /* Amoeba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Amoeba.h; sourceTree = "<group>"; };
+		F4264CB715C37EDD00064885 /* Amoeba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Amoeba.m; sourceTree = "<group>"; };
+		F4264CB815C37EDD00064885 /* AmoebaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmoebaCell.h; sourceTree = "<group>"; };
+		F4264CB915C37EDD00064885 /* AmoebaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmoebaCell.m; sourceTree = "<group>"; };
+		F4264CBA15C37EDD00064885 /* AmoebaGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmoebaGrid.h; sourceTree = "<group>"; };
+		F4264CBB15C37EDD00064885 /* AmoebaGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmoebaGrid.m; sourceTree = "<group>"; };
+		F4264CBC15C37EDD00064885 /* DebugConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugConfig.h; sourceTree = "<group>"; };
+		F4264CBD15C37EDD00064885 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		F4264CBE15C37EDD00064885 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		F4264CC315C37EF700064885 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = Resources/bg2.png; sourceTree = "<group>"; };
+		F4264CC415C37EF700064885 /* microbes-dec-8-2010-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microbes-dec-8-2010-80.png"; path = "Resources/microbes-dec-8-2010-80.png"; sourceTree = "<group>"; };
+		F49B7C3F15F176B4005BF309 /* cell0.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell0.PNG; path = Resources/cell0.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +475,15 @@
 		F4264B2C15C37BEF00064885 /* Amoeba */ = {
 			isa = PBXGroup;
 			children = (
+				F4264CB615C37EDD00064885 /* Amoeba.h */,
+				F4264CB715C37EDD00064885 /* Amoeba.m */,
+				F4264CB815C37EDD00064885 /* AmoebaCell.h */,
+				F4264CB915C37EDD00064885 /* AmoebaCell.m */,
+				F4264CBA15C37EDD00064885 /* AmoebaGrid.h */,
+				F4264CBB15C37EDD00064885 /* AmoebaGrid.m */,
+				F4264CBC15C37EDD00064885 /* DebugConfig.h */,
+				F4264CBD15C37EDD00064885 /* Enemy.h */,
+				F4264CBE15C37EDD00064885 /* Enemy.m */,
 				F4264CA415C37BF400064885 /* AppDelegate.h */,
 				F4264CA515C37BF400064885 /* AppDelegate.m */,
 				F4264CA715C37BF400064885 /* HelloWorldLayer.h */,
@@ -472,6 +500,9 @@
 		F4264B2D15C37BEF00064885 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F49B7C3F15F176B4005BF309 /* cell0.PNG */,
+				F4264CC315C37EF700064885 /* bg2.png */,
+				F4264CC415C37EF700064885 /* microbes-dec-8-2010-80.png */,
 				F4264B2E15C37BEF00064885 /* Default.png */,
 				F4264B3015C37BEF00064885 /* Default-Landscape~ipad.png */,
 				F4264B3215C37BEF00064885 /* fps_images.png */,
@@ -895,6 +926,9 @@
 				F4264B4315C37BF000064885 /* Icon@2x.png in Resources */,
 				F4264B4615C37BF000064885 /* iTunesArtwork in Resources */,
 				F4264C8415C37BF300064885 /* ChangeLog in Resources */,
+				F4264CC515C37EF700064885 /* bg2.png in Resources */,
+				F4264CC615C37EF700064885 /* microbes-dec-8-2010-80.png in Resources */,
+				F49B7C4015F176B4005BF309 /* cell0.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1043,10 @@
 				F4264CA615C37BF400064885 /* AppDelegate.m in Sources */,
 				F4264CA915C37BF400064885 /* HelloWorldLayer.m in Sources */,
 				F4264CAC15C37BF400064885 /* IntroLayer.m in Sources */,
+				F4264CBF15C37EDD00064885 /* Amoeba.m in Sources */,
+				F4264CC015C37EDD00064885 /* AmoebaCell.m in Sources */,
+				F4264CC115C37EDD00064885 /* AmoebaGrid.m in Sources */,
+				F4264CC215C37EDD00064885 /* Enemy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,7 +1068,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1049,7 +1087,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1065,6 +1103,7 @@
 				GCC_PREFIX_HEADER = Amoeba/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Amoeba/libs/kazmath/include\"";
 				INFOPLIST_FILE = Amoeba/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1083,6 +1122,7 @@
 				GCC_PREFIX_HEADER = Amoeba/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Amoeba/libs/kazmath/include\"";
 				INFOPLIST_FILE = Amoeba/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1112,6 +1152,7 @@
 				F4264CB115C37BF400064885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
