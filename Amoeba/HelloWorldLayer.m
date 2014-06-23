@@ -56,12 +56,21 @@ float _screenHeight;
 
 -(void) reset {
     // remove all enemies
+    NSMutableArray *enemiesToDelete = [[NSMutableArray alloc] init];
     for (Enemy* enemy in _enemies) {
+        if ( enemy != nil ) {
+            [enemiesToDelete addObject:enemy];
+        }
+    }
+    
+    for (Enemy* enemy in enemiesToDelete) {
         if ( enemy != nil ) {
             [_enemies removeObject:enemy];
             [self removeChild:enemy cleanup:YES];
         }
     }
+    [enemiesToDelete removeAllObjects];
+    [enemiesToDelete dealloc];
     
     // make a new amoeba
     [self removeChild:_amoeba cleanup:YES];
@@ -231,13 +240,13 @@ float _screenHeight;
     
     [_amoeba condenseAmoebaForDuration:da];
     
+    NSMutableArray *enemiesToDelete = [[NSMutableArray alloc] init];
     for (Enemy* enemy in _enemies) {
         if ( enemy != nil ) {
             if ([_amoeba isSurrounding:enemy]) {
                 [_amoeba onSurround:enemy];
                 
-                [_enemies removeObject:enemy];
-                [self removeChild:enemy cleanup:YES];
+                [enemiesToDelete addObject:enemy];
             }
             else if ([_amoeba isTouching:enemy]) {
                 [_amoeba onHit:enemy forDuration:dt];
@@ -247,6 +256,15 @@ float _screenHeight;
             }
         }
     }
+    
+    for (Enemy* enemy in enemiesToDelete) {
+        if ( enemy != nil ) {
+            [_enemies removeObject:enemy];
+            [self removeChild:enemy cleanup:YES];
+        }
+    }
+    [enemiesToDelete removeAllObjects];
+    [enemiesToDelete dealloc];
     
     [_amoeba update:dt];
 }
