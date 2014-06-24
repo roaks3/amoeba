@@ -3,6 +3,7 @@ Amoeba
 
 Amoeba game
 
+* Built with Cocos2d v2.0.0
 * Works with XCode 4.5.1
 * Works on iOS 5.1 and iOS 6.0
 
